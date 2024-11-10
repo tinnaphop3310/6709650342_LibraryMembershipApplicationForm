@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Library Membership Application</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box1"><h1>แบบฟอร์มสมัครสมาชิกห้องสมุด</h1></div>
+        </br></br>
+        <form >
+            
+            <div class ="inputbox">
+            <label for="thaiName">ชื่อ-นามสกุล (ภาษาไทย) <span style="color: red;">*</span></label>
+                <input type="text" id="thaiName" name="thaiName" required>
+                <br><br>
+            </div>
+
+            <div class ="inputbox">
+                <label for="englishName">ชื่อ-นามสกุล (ภาษาอังกฤษ) <span style="color: red;">*</span></label>
+                <input type="text" id="englishName" name="englishName" required>
+                <br><br>
+            </div>
+            <div class="gender-details">
+                <div class="gender-title"><label>เพศ <span style="color: red;">*</span></label></div><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label><br>
+                <input type="radio" id="undifine" name="gender" value="undifine">
+                <label for="female">ไม่ระบุ</label><br><br>
+            </div>
+            <div class ="inputbox">
+                <label for="studentId">รหัสนักศึกษา <span style="color: red;">*</span></label>
+                <input type="text" id="studentId" name="studentId" required pattern="[0-9]{8}" placeholder="กรอกรหัสนักศึกษา 8 หลัก">
+                <br><br>
+            </div>
+
+            <div class ="inputbox">
+                <label for="faculty">คณะที่ศึกษา <span style="color: red;">*</span></label>
+                <select id="faculty" name="faculty" required>
+                    <option value="">--เลือกคณะ--</option>
+                    <option value="science">วิทยาศาสตร์</option>
+                    <option value="engineering">วิศวกรรมศาสตร์</option>
+                    <option value="arts">ศิลปศาสตร์</option>
+                    <option value="business">บริหารธุรกิจ</option>
+                    <option value="doctor">แพทยศาสตรบัณฑิต</option>
+
+                </select>
+                <br><br>
+            </div>
+            
+
+            <div class ="inputbox">
+            <label for="email">ที่อยู่อีเมล <span style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="example@domain.com">
+            <br><br>
+            </div>
+
+            <div class ="inputbox">
+                <label for="dob">วันเดือนปีเกิด <span style="color: red;">*</span></label>
+                <input type="date" id="dob" name="dob" required>
+                <br><br>
+            </div>
+            <div class ="inputbox2">
+                <label for="bookType">ประเภทของหนังสือที่สนใจ</label><br>
+                <input type="checkbox" id="fiction" name="bookType" value="fiction">
+                <label for="fiction">นิยาย</label><br>
+                <input type="checkbox" id="nonfiction" name="bookType" value="nonfiction">
+                <label for="nonfiction">สารคดี</label><br>
+                <input type="checkbox" id="comics" name="bookType" value="comics">
+                <label for="comics">การ์ตูน</label><br>
+                <input type="checkbox" id="education" name="bookType" value="education">
+                <label for="education">การศึกษา</label><br><br>
+            </div>
+
+            <div class ="inputbox2">
+                <label>ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมล</label><br>
+                <input type="radio" id="subscribeYes" name="subscribe" value="yes">
+                <label for="subscribeYes">ต้องการ</label><br>
+                <input type="radio" id="subscribeNo" name="subscribe" value="no">
+                <label for="subscribeNo">ไม่ต้องการ</label><br><br>
+            </div>
+
+            <div class="button">
+                <button type="submit">สมัครสมาชิก</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #f5dbba, #f1a94a);
+  }
+.container{
+max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+
+}
+.inputbox{
+    display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.container .inputbox input{
+    height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.container .inputbox select{
+    height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.container .gender-details label{
+    font-size: 20px;
+    font-weight: 500;
+}
+.container .inputbox label{
+    font-size: 20px;
+    font-weight: 500;
+}
+.container .inputbox2 label{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+.box1{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid white;
+    box-shadow: 0 8px 32px 0 rgba(156, 155, 155, 0.37);
+    padding: 3.5%;
+    text-align: center;
+
+}
+form .button {
+    height: 45px;
+    margin: 35px 0
+  }
+form .button button {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #f5dbba, #f1a94a);
+  }
+form .button input:hover {
+    background: linear-gradient(-135deg, #f5dbba, #f1a94a);
+  }
+  @media(max-width: 584px) {
+    .container {
+      max-width: 100%;
+    }
+ 
+}
